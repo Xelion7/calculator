@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+</head>
+
+<body>
+
+<h2>Calculator</h2>
+
+<style>
+body, form, input, button{
+font-size:1.2em;
+font-family:Arial, Helvetica, sans-serif;
+margin:5px;
+padding:2px;
+}
+input{
+color:darkgray;
+}
+#error{
+color:red;
+}
+</style>
+
+<div>
+
+<label>Βαθμός (0-10)</label>
+
+<input type="number" id="vathm" min=0 max=10>
+
+<button id="calc">Εισαγωγή</button> <button id="reset">Καθαρισμός</button>
+
+</div>
+
+<label> Μέση Τιμή:
+
+<input type=text id="averg" readonly size=5></label>
+
+<label>Πλήθος Βαθμών:
+
+<input type=text id="plithos" readonly size=5></label><br>
+
+<p>Κάνε ανανέωση ή πάτα Καθαρισμός για να αρχίσεις από την αρχή</p>
+
+<p id="error"></p>
+
+<script src="grades.js" defer></script>
+
+</body>
+
+</html>
